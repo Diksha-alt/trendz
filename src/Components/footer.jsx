@@ -145,12 +145,13 @@ const Footer = () => {
                   <ul className="list-inline">
                     {lists.map((value) => {
                       const { list1, id } = value;
-
+                     
                       <li key={id} className="list-item mb-3">
                         <NavLink to="/" className="grey text-decoration-none">
                           {list1}
                         </NavLink>
-                      </li>;
+                      </li>
+                     
                     })}
                   </ul>
                 </div>

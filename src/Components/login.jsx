@@ -1,13 +1,34 @@
-import { React, useState } from "react";
+import { React, useState,useEffect } from "react";
 import Header from './header.jsx';
 import Footer from './footer.jsx';
 import { login } from "../action/index";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+
 
 const Login = () => {
+  // const navigate = useNavigate();
+
   const [username, setusername] = useState("");
   const [password, setpassword] = useState("");
+
+
+  // const loginuser = useSelector((state) => state.username);
+  // console.log("loginuser", loginuser);
+
+  // useEffect(() => {
+  //   e.preventDefault();
+  //   if (username === logindata.username && password === logindata.password) {
+  //     navigate("/")
+  //     }
+  //     else{
+  //       navigate("/login")
+  //     }
+  // }, []);
+
+  
+
 
   const dispatch = useDispatch();
 

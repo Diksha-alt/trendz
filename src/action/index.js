@@ -38,6 +38,6 @@ export const signup = (data) => async (dispatch) => {
 
 export const login = (data) => async (dispatch) => {
   const res = await axios.post("http://localhost:5000/new/login", data);
-  console.log(res);
+  // console.log(res);
   dispatch(Signin(res.data));
 };
